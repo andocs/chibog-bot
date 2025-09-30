@@ -87,7 +87,7 @@ module.exports = {
             : place.priceLevel === "PRICE_LEVEL_VERY_EXPENSIVE"
             ? "$$$$"
             : "N/A",
-          place.priceRange.startPrice
+          place?.priceRange?.startPrice
             ? `P${place.priceRange.startPrice.units} - P${place.priceRange.endPrice.units}`
             : "N/A",
           place.nationalPhoneNumber || "N/A",
